@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://oren12346.github.io/Second-Project--Cryptonite/",
+  "homepage": "https://oren12346.github.io/Second-Project-Cryptonite/",
   "scripts": {
     "dev": "vite",
     "server": "npm --prefix server run dev",

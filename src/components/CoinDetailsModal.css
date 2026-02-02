@@ -1,0 +1,134 @@
+/* Fullscreen backdrop */
+.cdm-backdrop {
+  position: fixed;
+  inset: 0; /* top:0 right:0 bottom:0 left:0 */
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+  display: grid;
+  place-items: center;
+  z-index: 999; /* מעל הכל */
+}
+
+/* Modal container */
+.cdm-modal {
+  width: min(420px, 92vw);
+  border-radius: 18px;
+  background: rgba(20, 20, 30, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.55);
+  padding: 16px;
+  animation: modalIn 0.18s ease-out;
+}
+
+/* Header */
+.cdm-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.cdm-title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.cdm-subtitle {
+  margin: 2px 0 0;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+/* Close button */
+.cdm-close {
+  border: 0;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  border-radius: 10px;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+}
+
+.cdm-close:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+/* Body */
+.cdm-body {
+  margin: 14px 0;
+}
+
+.cdm-state {
+  padding: 12px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.06);
+  text-align: center;
+  font-weight: 600;
+  opacity: 0.85;
+}
+
+.cdm-error {
+  background: rgba(255, 80, 80, 0.12);
+  color: #ffb3b3;
+}
+
+/* Prices */
+.cdm-prices {
+  display: grid;
+  gap: 10px;
+}
+
+.cdm-price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.cdm-currency {
+  font-weight: 700;
+  opacity: 0.75;
+}
+
+.cdm-value {
+  font-weight: 800;
+}
+
+/* Footer */
+.cdm-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cdm-btn {
+  border-radius: 14px;
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.cdm-btn:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+/* Animation */
+@keyframes modalIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

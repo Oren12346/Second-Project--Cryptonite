@@ -1,0 +1,17 @@
+{
+  "name": "ai-server",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "server": "node index.js",
+    "dev": "node index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6"
+  }
+}
